@@ -1,0 +1,49 @@
+@use "../abstract/" as *;
+
+h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 9.6rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 6.4rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 4rem;
+  font-weight: medium;
+}
+
+p {
+  font-family: "Jura", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.faq {
+  font-family: "Jura", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.info {
+  font-family: "Jura", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.btn {
+  font-family: "Orbitron", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+.msg {
+  font-family: "Orbitron", sans-serif;
+  font-size: 6.4rem;
+  font-weight: 400;
+}

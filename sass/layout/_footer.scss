@@ -3,13 +3,18 @@
 .footer {
   background-color: $accent-color;
   color: $bg-color;
-  height: 100vh;
+  // height: 100vh;
+  padding: 15rem 0;
 
   &__box {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 300px 2fr;
+    gap: $horizontal-gutter;
   }
 
+  &__faq {
+    align-self: end;
+  }
   &__info-box {
   }
 
