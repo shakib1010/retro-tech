@@ -1,0 +1,24 @@
+@use "../abstract/" as *;
+
+.footer {
+  background-color: $accent-color;
+  color: $bg-color;
+  height: 100vh;
+
+  &__box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  &__info-box {
+  }
+
+  &__email-box {
+  }
+
+  &__icon-box {
+  }
+
+  &__icon {
+  }
+}

@@ -16,10 +16,9 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: white;
-  padding: 3rem;
 }
 
 .container {
-  max-width: 144rem;
+  max-width: calc(1920px - 340px);
   margin: 0 auto;
 }
