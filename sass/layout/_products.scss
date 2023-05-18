@@ -1,0 +1,40 @@
+@use "../abstract/" as *;
+
+.products {
+  position: relative;
+
+  background-color: #e7d5ba;
+  padding: 5rem 0;
+  margin: 10rem 0;
+  &__box {
+    // display: grid;
+    // grid-template-columns: 1fr 2fr;
+  }
+
+  &__faq {
+    position: absolute;
+  }
+
+  &__info {
+    &-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &-features {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      text-align: right;
+      width: 80%;
+      margin-left: auto;
+    }
+
+    &-img {
+      display: block;
+      position: absolute;
+      right: 30%;
+      top: -40%;
+    }
+  }
+}

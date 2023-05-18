@@ -5,6 +5,7 @@
   color: $bg-color;
   // height: 100vh;
   padding: 15rem 0;
+  height: 70vh;
 
   &__box {
     display: grid;
@@ -16,9 +17,20 @@
     align-self: end;
   }
   &__info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   &__email-box {
+  }
+
+  &__email {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid $bg-color;
+    color: $bg-color;
+    width: 725px;
   }
 
   &__icon-box {
