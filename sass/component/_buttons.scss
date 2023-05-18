@@ -1,0 +1,13 @@
+@use "../abstract/" as *;
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-size: 3.2rem;
+    padding: 1rem 2rem;
+    color: $bg-color;
+    background-color: $button-color;
+  }
+}
