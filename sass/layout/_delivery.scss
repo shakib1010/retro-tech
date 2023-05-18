@@ -1,0 +1,82 @@
+@use "../abstract/" as *;
+
+.delivery {
+  display: grid;
+  grid-template-columns: 1.8fr 1.1fr 1.1fr;
+  padding: 20rem 0;
+  gap: 3.9rem;
+  height: 1250px;
+  &--1 {
+    padding: 4.5rem 3rem;
+    background-color: $accent-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    h2 {
+      z-index: 5;
+      width: 90%;
+      margin-top: 15%;
+    }
+
+    button {
+      width: 40%;
+      z-index: 5;
+    }
+
+    &-img {
+      max-width: 80%;
+      position: absolute;
+      bottom: 0;
+      left: 25%;
+      z-index: 1;
+    }
+  }
+  &--2 {
+    background-color: white;
+    color: $accent-color;
+    padding: 4.5rem 3rem;
+    position: relative;
+    overflow: hidden;
+
+    h3 {
+      margin-top: 150%;
+      margin-bottom: 1rem;
+      z-index: 1;
+    }
+    p {
+      z-index: 1;
+      width: 80%;
+      color: $text-color;
+    }
+    &-img {
+      max-width: 370%;
+      position: absolute;
+      top: 0;
+      right: -30%;
+      z-index: 1;
+    }
+  }
+  &--3 {
+    background-color: white;
+    color: $accent-color;
+    padding: 4.5rem 3rem;
+    position: relative;
+    overflow: hidden;
+    h3 {
+      //   margin-top: 150%;
+      margin-bottom: 1rem;
+    }
+    p {
+      width: 80%;
+      color: $text-color;
+    }
+    &-img {
+      max-width: 100%;
+      position: absolute;
+      top: 45%;
+      right: 0;
+      z-index: 1;
+    }
+  }
+}

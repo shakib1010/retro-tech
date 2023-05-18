@@ -1,0 +1,46 @@
+@use "../abstract/" as *;
+.review {
+  h2 {
+    color: $accent-color;
+    margin-bottom: 10rem;
+  }
+  &__card {
+    display: flex;
+    // width: 80%;
+    align-items: center;
+    &-box {
+      background-color: #e7d5ba;
+      height: 500px;
+      width: 1180px;
+      margin: 0 auto;
+      padding: 90px 75px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &-img {
+        background-color: $accent-color;
+        width: 290px;
+        height: 290px;
+        border-radius: 50%;
+      }
+
+      &-info {
+        width: 690px;
+        color: $text-color;
+        h3 {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    &-iconbox {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      border: 2px solid $text-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
