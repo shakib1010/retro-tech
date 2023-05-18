@@ -1,0 +1,138 @@
+@use "../abstract/" as *;
+
+.navigation {
+  color: $text-color;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__control-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $text-color;
+    padding: 1rem 0;
+    z-index: 2000;
+  }
+
+  &__logo-box {
+    line-height: 1;
+  }
+
+  &__logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &__button {
+    position: relative;
+    width: 4rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &-line {
+      position: relative;
+      transition: all 0.2s;
+    }
+
+    &-line,
+    &-line::after {
+      width: 100%;
+      height: 2px;
+      background-color: black;
+    }
+
+    &-line::after {
+      content: "";
+      position: absolute;
+      top: 1rem;
+      left: 0;
+    }
+  }
+
+  &__background {
+    position: fixed;
+    width: 6rem;
+    height: 6rem;
+    background-color: $button-color;
+    border-radius: 50%;
+    top: -6rem;
+    right: -6rem;
+    z-index: 1000;
+    transition: all 0.8s cubic-bezier(0.46,0.03,0.52,0.96);
+  }
+
+  &__nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    visibility: hidden;
+    left: -100%;
+    z-index: 1500;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    margin: 2rem;
+    text-align: center;
+  }
+
+  &__link {
+    &, 
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $bg-color;
+      background: linear-gradient(120deg, transparent 50%, $color-white  50%);
+      padding: 1rem 2rem;
+      display: block;
+      background-size: 220%;
+      transition: all 0.3s;
+      font-size: 2.5rem;
+    }
+
+    &:hover,
+    &:active {
+      background-position: right;
+      transform: translateX(1rem);
+      color: $accent-color;
+    }
+  }
+
+  // Functionality
+  &__checkbox:checked ~ &__background {
+    transform: scale(100);
+  }
+
+  &__checkbox:checked ~ &__nav {
+    left: 0;
+    visibility: visible;
+  }
+
+  &__checkbox:checked ~ &__control-box &__button &__button-line {
+    transform: rotate(135deg);
+    background-color: $accent-color;
+  }
+  
+  &__checkbox:checked ~ &__control-box &__button &__button-line::after {
+    transform: rotate(-270deg);
+    top: 0;
+    background-color: $accent-color;
+  }
+}
