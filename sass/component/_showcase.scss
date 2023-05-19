@@ -1,7 +1,7 @@
 @use "../abstract/" as *;
 
 .section-showcase {
-  padding: 40rem 0;
+  // padding: 40rem 0;
 }
 
 .showcase {
@@ -74,4 +74,8 @@
   &__para {
     color: $text-color;
   }
+}
+
+// Section headline
+.section-headline {
 }

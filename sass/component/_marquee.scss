@@ -1,0 +1,48 @@
+@use "../abstract/" as *;
+
+.marquee {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-top: 2px solid $text-color;
+  border-bottom: 2px solid $text-color;
+
+  &-1,
+  &-2 {
+    position: absolute;
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-1 {
+    animation: marquee-keywords 10s linear infinite;
+    left: 0%;
+  }
+
+  &-2 {
+    animation: marquee-keywords 10s linear infinite;
+    left: 110%;
+  }
+}
+
+.text {
+  padding: 0 5rem;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+
+@keyframes marquee-keywords {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}

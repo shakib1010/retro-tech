@@ -6,6 +6,10 @@
   width: 100%;
   left: 0;
   top: 0;
+  z-index: 5000;
+
+  &__container {
+  }
 
   &__checkbox {
     display: none;
@@ -15,13 +19,16 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid $text-color;
-    padding: 1rem 0;
+    border-bottom: 2px solid $text-color;
+    padding: 2rem 0;
     z-index: 2000;
   }
 
   &__logo-box {
     line-height: 1;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    color: $accent-color;
   }
 
   &__logo {
@@ -67,7 +74,7 @@
     top: -6rem;
     right: -6rem;
     z-index: 1000;
-    transition: all 0.8s cubic-bezier(0.46,0.03,0.52,0.96);
+    transition: all 0.8s cubic-bezier(0.46, 0.03, 0.52, 0.96);
   }
 
   &__nav {
@@ -81,7 +88,7 @@
     visibility: hidden;
     left: -100%;
     z-index: 1500;
-    transition: all 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   }
 
   &__list {
@@ -94,12 +101,12 @@
   }
 
   &__link {
-    &, 
+    &,
     &:link,
     &:visited {
       text-decoration: none;
       color: $bg-color;
-      background: linear-gradient(120deg, transparent 50%, $color-white  50%);
+      background: linear-gradient(120deg, transparent 50%, $color-white 50%);
       padding: 1rem 2rem;
       display: block;
       background-size: 220%;
@@ -129,7 +136,7 @@
     transform: rotate(135deg);
     background-color: $accent-color;
   }
-  
+
   &__checkbox:checked ~ &__control-box &__button &__button-line::after {
     transform: rotate(-270deg);
     top: 0;
