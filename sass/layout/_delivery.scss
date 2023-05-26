@@ -43,11 +43,17 @@
       margin-top: 150%;
       margin-bottom: 1rem;
       z-index: 1;
+      position: relative;
+      z-index: 100;
+      top: 8rem;
     }
     p {
       z-index: 1;
       width: 80%;
       color: $text-color;
+      position: relative;
+      z-index: 100;
+      top: 8rem;
     }
     &-img {
       max-width: 370%;

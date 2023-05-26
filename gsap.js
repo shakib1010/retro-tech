@@ -27,7 +27,6 @@ let scrollTween = gsap.to(sections, {
     scrub: 1,
     end: "+=3000",
     //snap: 1 / (sections.length - 1),
-    markers: true,
   },
 })
 
@@ -35,14 +34,14 @@ console.log(1 / (sections.length - 1))
 
 //Progress bar animation
 
-gsap.to(mask, {
-  width: "100%",
-  scrollTrigger: {
-    trigger: ".wrapper",
-    start: "top left",
-    scrub: 1,
-  },
-})
+// gsap.to(mask, {
+//   width: "100%",
+//   scrollTrigger: {
+//     trigger: ".wrapper",
+//     start: "top left",
+//     scrub: 1,
+//   },
+// })
 
 // whizz around the sections
 sections.forEach((section) => {
@@ -63,7 +62,6 @@ sections.forEach((section) => {
       trigger: section,
       containerAnimation: scrollTween,
       start: "left center",
-      markers: true,
     },
   })
 })

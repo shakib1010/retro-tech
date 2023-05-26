@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dist/css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +16,11 @@
       href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;700&family=Orbitron:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="dist/css/index.css" />
     <script src="gsap.js" defer></script>
     <title>Retro Tech</title>
   </head>
@@ -100,7 +104,7 @@
       </div>
     </header>
 
-    <section class="section-headline">
+    <section class="section-headline u-mb-big-5">
       <div class="marquee style-1">
         <span class="marquee-1">
           <span class="text">
@@ -121,98 +125,66 @@
 
     <div class="wrapper">
       <div class="scroll-container scrollx">
-        <!-- <svg
-          viewBox="0 0 900 10"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M9.89998 6C9.43671 8.28224 7.41896 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.41896 0 9.43671 1.71776 9.89998 4H445.1C445.563 1.71776 447.581 0 450 0C452.419 0 454.437 1.71776 454.9 4H890.1C890.563 1.71776 892.581 0 895 0C897.761 0 900 2.23858 900 5C900 7.76142 897.761 10 895 10C892.581 10 890.563 8.28224 890.1 6H454.9C454.437 8.28224 452.419 10 450 10C447.581 10 445.563 8.28224 445.1 6H9.89998Z"
-            fill="#D9D9D9"
-          />
-          <mask
-            id="mask0_0_1"
-            style="mask-type: alpha"
-            maskUnits="userSpaceOnUse"
-            x="0"
-            y="0"
-            width="900"
-            height="10"
-          >
-            <path
-              d="M9.89998 6C9.43671 8.28224 7.41896 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.41896 0 9.43671 1.71776 9.89998 4H445.1C445.563 1.71776 447.581 0 450 0C452.419 0 454.437 1.71776 454.9 4H890.1C890.563 1.71776 892.581 0 895 0C897.761 0 900 2.23858 900 5C900 7.76142 897.761 10 895 10C892.581 10 890.563 8.28224 890.1 6H454.9C454.437 8.28224 452.419 10 450 10C447.581 10 445.563 8.28224 445.1 6H9.89998Z"
-              fill="#D9D9D9"
-            />
-          </mask>
-          <g mask="url(#mask0_0_1)">
-            <rect class="mask" y="-49" height="99" fill="black" />
-          </g>
-        </svg> -->
-
-        <section class="sec1 pin">
-          <img class="showcase__img" src="images/img/car.jpg" alt="" />
+        <section class="sec sec1 pin">
+          <div class="sec__content">
+            <div class="sec__img-box">
+              <img class="sec__img" src="images/img/car.jpg" alt="" />
+            </div>
+            <div class="sec__content-box">
+              <h1>The excited title goes here</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt debitis eligendi consectetur dicta distinctio porro
+                esse, quibusdam fugit nemo impedit repellendus? Deserunt
+                reprehenderit consectetur facilis doloremque delectus, beatae
+                fugiat unde?
+              </p>
+            </div>
+          </div>
         </section>
-        <section class="sec2 pin">
-          <img class="showcase__img" src="images/img/seri.jpg" alt="" />
+        <section class="sec sec2 pin">
+          <div class="sec__content">
+            <div class="sec__img-box">
+              <img class="sec__img" src="images/img/car.jpg" alt="" />
+            </div>
+            <div class="sec__content-box">
+              <h1>The excited title goes here</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt debitis eligendi consectetur dicta distinctio porro
+                esse, quibusdam fugit nemo impedit repellendus? Deserunt
+                reprehenderit consectetur facilis doloremque delectus, beatae
+                fugiat unde?
+              </p>
+            </div>
+          </div>
         </section>
-        <section class="sec3 pin">
-          <!-- image goes here -->
+        <section class="sec sec3 pin">
+          <div class="sec__content">
+            <div class="sec__img-box">
+              <img class="sec__img" src="images/img/car.jpg" alt="" />
+            </div>
+            <div class="sec__content-box">
+              <h1>The excited title goes here</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt debitis eligendi consectetur dicta distinctio porro
+                esse, quibusdam fugit nemo impedit repellendus? Deserunt
+                reprehenderit consectetur facilis doloremque delectus, beatae
+                fugiat unde?
+              </p>
+            </div>
+          </div>
         </section>
       </div>
     </div>
 
-    <!-- <section class="section-showcase">
-      <div class="showcase container">
-        <div class="showcase__img-box">
-          <img
-            class="showcase__img showcase__img-1"
-            src="images/img/car.jpg"
-            alt=""
-          />
-          <img
-            class="showcase__img showcase__img-2"
-            src="images/img/seri.jpg"
-            alt=""
-          />
-          <img
-            class="showcase__img showcase__img-2"
-            src="images/img/seri.jpg"
-            alt=""
-          />
-        </div>
-        <div class="showcase__disc">
-          <div class="showcase__disc-left">
-            <address class="showcase__address">
-              <h4>Contact us</h4>
-              <p>The photographer</p>
-              <a href="#">tingting231@django.com</a>
-              <a href="#">Cell: 01716789063</a>
-            </address>
-          </div>
-          <div class="showcase__disc-right">
-            <h3 class="showcase__title">Realizing Retro</h3>
-            <p class="showcase__para">
-              Retro style is imitative or consciously derivative of lifestyles,
-              trends, or art forms from history, including in music, modes,
-              fashions, or attitudes. In popular culture, the "nostalgia cycle"
-              is typically for the two decades that begin 20–30 years ago.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section> -->
     <!-- Products section -->
-    <section class="products u-mb-huge-1">
+    <!-- <section class="products u-mb-huge-1">
       <div class="products__title">
         <h2>The products</h2>
       </div>
       <div class="products__box container">
-        <!-- <div class="products__faq">
-          FAQ
-          <p>
-            The brand of the technologies, and the shop link : www.retro111.com
-          </p>
-        </div> -->
         <div class="products__info">
           <div class="products__info-section">
             <div class="products__info-features">
@@ -255,25 +227,152 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <section class="products u-mb-huge-1">
+            <div class="products__title">
+              <h2>The products</h2>
+            </div>
+            <div class="products__box container">
+              <div class="products__info">
+                <div class="products__info-section">
+                  <div class="products__info-features">
+                    <div class="products__info-features-1">
+                      <h3>Cassettes</h3>
+                      <p>
+                        The style now called retro art is a genre of pop art
+                        which was developed from the 1940s to 1960s, in response
+                        to a need for bold, eye-
+                      </p>
+                    </div>
+                    <div class="products__info-features-2">
+                      <h3>Mechanism</h3>
+                      <p>
+                        The style now called retro art is a genre of pop art
+                        which was developed from the 1940s to 1960s, in response
+                        to a need for bold, eye-
+                      </p>
+                    </div>
+                    <div class="products__info-features-3">
+                      <h3>Brand</h3>
+                      <p>
+                        The style now called retro art is a genre of pop art
+                        which was developed from the 1940s to 1960s, in response
+                        to a need for bold, eye.
+                      </p>
+                    </div>
+                    <div class="products__info-features-4">
+                      <h3>Mechanism</h3>
+                      <p>
+                        The style now called retro art is a genre of pop art
+                        which was developed from the 1940s to 1960s, in response
+                        to a need for bold, eye.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="products__info-img">
+                    <img src="images/img/phone.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section class="products u-mb-huge-1">
+            <div class="products__title">
+              <h2>The products</h2>
+            </div>
+            <div class="products__box container">
+              <div class="products__info">
+                <div class="products__info-section">
+                  <div class="products__info-features">
+                    <div class="products__info-features-1">
+                      <h3>Cassettes</h3>
+                      <p>
+                        The style now called retro art is a genre of pop art
+                        which was developed from the 1940s to 1960s, in response
+                        to a need for bold, eye-
+                      </p>
+                    </div>
+                    <div class="products__info-features-2">
+                      <h3>Mechanism</h3>
+                      <p>
+                        The style now called retro art is a genre of pop art
+                        which was developed from the 1940s to 1960s, in response
+                        to a need for bold, eye-
+                      </p>
+                    </div>
+                    <div class="products__info-features-3">
+                      <h3>Brand</h3>
+                      <p>
+                        The style now called retro art is a genre of pop art
+                        which was developed from the 1940s to 1960s, in response
+                        to a need for bold, eye.
+                      </p>
+                    </div>
+                    <div class="products__info-features-4">
+                      <h3>Mechanism</h3>
+                      <p>
+                        The style now called retro art is a genre of pop art
+                        which was developed from the 1940s to 1960s, in response
+                        to a need for bold, eye.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="products__info-img">
+                    <img src="images/img/phone.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">Slide 3</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
 
     <!-- Review section -->
-
     <section class="review container u-mt-huge u-mb-huge-1">
       <h2>WE MAKE PEOPLE GENUINELY HAPPY</h2>
       <div class="review__card">
-        <div class="review__card-box">
-          <div class="review__card-box-img">X</div>
-          <div class="review__card-box-info">
-            <h3>I HAD THE BEST WEEK EVER WITH MY FAMILY</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-              ipsum sapiente aspernatur libero repellat quis consequatur ducimus
-              quam nisi exercitationem omnis earum qui.
-            </p>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="review__card-box">
+                <div class="review__card-box-img">X</div>
+                <div class="review__card-box-info">
+                  <h3>I HAD THE BEST WEEK EVER WITH MY FAMILY</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam, ipsum sapiente aspernatur libero repellat quis
+                    consequatur ducimus quam nisi exercitationem omnis earum
+                    qui.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
           </div>
+          <!-- <div class="swiper-button-next"></div> -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="review__card-iconbox">
+
+        <div class="review__card-iconbox swiper-button-next">
           <img src="icons/Arrow 2.svg" alt="" />
         </div>
       </div>
@@ -331,5 +430,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/Observer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="app/app.js"></script>
   </body>
 </html>

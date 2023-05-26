@@ -1,40 +1,50 @@
 .wrapper {
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
-}
-
-svg {
-  position: absolute;
-  top: 12em;
-  left: 10vw;
-  width: 50vw;
-
-  .mask {
-    width: 0;
-  }
 }
 
 .scroll-container {
   display: flex;
   width: 300vw;
 
-  .col {
-    display: flex;
-    gap: 3em;
-  }
-
   section {
     width: 100vw;
-    padding: 10rem 0;
+    height: 100vh;
   }
 }
 
-section {
-  height: 100vh;
-  left: 0;
-  top: 0;
+.sec {
+  &__content {
+    display: flex;
+    overflow: hidden;
+    gap: 8rem;
+  }
 
-  img {
-    width: 10rem;
+  &__img-box {
+    overflow: hidden;
+  }
+
+  &__img {
+    // object-fit: contain;
+    width: 100%;
+  }
+
+  &__content-box {
+    margin-top: 25rem;
+
+    h1 {
+      color: black !important;
+      margin-bottom: 6rem;
+    }
   }
 }
+
+// section {
+//   // height: 100vh;
+//   // left: 0;
+//   // top: 0;
+
+//   img {
+//     width: 100%;
+//   }
+// }
