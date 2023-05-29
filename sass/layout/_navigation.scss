@@ -1,14 +1,16 @@
 @use "../abstract/" as *;
 
 .navigation {
-  color: $text-color;
   position: fixed;
+  color: $text-color;
   width: 100%;
   left: 0;
   top: 0;
   z-index: 5000;
+  background-color: $bg-color;
 
   &__container {
+
   }
 
   &__checkbox {

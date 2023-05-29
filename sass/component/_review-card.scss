@@ -1,5 +1,7 @@
 @use "../abstract/" as *;
 .review {
+  position: relative;
+  
   h2 {
     color: $accent-color;
     margin-bottom: 10rem;
