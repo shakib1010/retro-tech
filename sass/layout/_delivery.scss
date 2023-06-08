@@ -5,7 +5,11 @@
   grid-template-columns: 1.8fr 1.1fr 1.1fr;
   padding: 20rem 0;
   gap: 3.9rem;
-  height: 1250px;
+  min-height: 1250px;
+  @include respond(tab-land) {
+    margin: 0 5rem;
+  }
+
   &--1 {
     padding: 4.5rem 3rem;
     background-color: $accent-color;
@@ -13,6 +17,16 @@
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+
+    @include respond(tab-land) {
+      grid-column: 1 / -1;
+      min-height: 120rem;
+    }
+
+    @include respond(phone) {
+      min-height: auto;
+    }
+
     h2 {
       z-index: 5;
       width: 90%;
@@ -30,14 +44,26 @@
       bottom: 0;
       left: 25%;
       z-index: 1;
+
+      @include respond(phone) {
+        display: none;
+      }
     }
   }
+
   &--2 {
     background-color: white;
     color: $accent-color;
     padding: 4.5rem 3rem;
     position: relative;
     overflow: hidden;
+    @include respond(tab-land) {
+      min-height: 120rem;
+    }
+
+    @include respond(phone) {
+      min-height: auto;
+    }
 
     h3 {
       margin-top: 150%;
@@ -46,6 +72,10 @@
       position: relative;
       z-index: 100;
       top: 8rem;
+
+      @include respond(phone) {
+        top: 4rem;
+      }
     }
     p {
       z-index: 1;
@@ -54,6 +84,10 @@
       position: relative;
       z-index: 100;
       top: 8rem;
+
+      @include respond(phone) {
+        top: 4rem;
+      }
     }
     &-img {
       max-width: 370%;
@@ -63,20 +97,32 @@
       z-index: 1;
     }
   }
+
   &--3 {
     background-color: white;
     color: $accent-color;
     padding: 4.5rem 3rem;
     position: relative;
     overflow: hidden;
+
+    @include respond(tab-land) {
+      grid-column: 2 / -1;
+      min-height: 120rem;
+    }
+
+    @include respond(phone) {
+      min-height: auto;
+    }
+
     h3 {
-      //   margin-top: 150%;
       margin-bottom: 1rem;
     }
+
     p {
       width: 80%;
       color: $text-color;
     }
+
     &-img {
       max-width: 100%;
       position: absolute;

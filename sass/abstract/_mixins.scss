@@ -21,7 +21,7 @@
 [1200 - 1800] is where our normal styles apply
 1800px + :      Big desktop
 
-$breakpoint arguement choices:
+$breakpoint argument choices:
 - phone
 - tab-port
 - tab-land
@@ -48,6 +48,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
       @content;
     } //1200px
   }
+
   @if $breakpoint == big-desktop {
     @media only screen and (min-width: 112.5em) {
       @content;

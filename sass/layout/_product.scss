@@ -1,0 +1,85 @@
+@use "../abstract/" as *;
+
+.product {
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+
+  &__title {
+    h2 {
+      color: $accent-color;
+    }
+  }
+
+  &__content {
+    position: relative;
+    left: 8rem;
+    width: 300px;
+
+    @include respond(phone) {
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  &__text-box {
+    text-align: right;
+
+    @include respond(phone) {
+      text-align: center;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+
+    & h3 {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    & p {
+      font-size: 1.6rem;
+    }
+
+    &--1 {
+      position: relative;
+      right: 0;
+    }
+
+    &--2 {
+      position: relative;
+      left: 3rem;
+    }
+
+    &--3 {
+      position: relative;
+      left: 10rem;
+    }
+
+    &--4 {
+      position: relative;
+      left: 3rem;
+    }
+
+    @include respond(phone) {
+      left: 0;
+    }
+  }
+
+  &__img-box {
+    position: relative;
+    width: 38rem;
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: -30rem;
+    right: 0rem;
+    width: 32rem;
+  }
+}

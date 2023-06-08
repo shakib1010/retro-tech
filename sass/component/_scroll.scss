@@ -6,10 +6,12 @@
 .scroll-container {
   display: flex;
   width: 300vw;
+  gap: 6rem;
 
   section {
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
+    margin-top: 8rem;
   }
 }
 
@@ -17,15 +19,14 @@
   &__content {
     display: flex;
     overflow: hidden;
-    gap: 8rem;
   }
 
   &__img-box {
     overflow: hidden;
+    margin-right: 6rem;
   }
 
   &__img {
-    // object-fit: contain;
     width: 100%;
   }
 
@@ -38,13 +39,3 @@
     }
   }
 }
-
-// section {
-//   // height: 100vh;
-//   // left: 0;
-//   // top: 0;
-
-//   img {
-//     width: 100%;
-//   }
-// }

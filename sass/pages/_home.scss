@@ -1,9 +1,8 @@
 @use "../abstract/" as *;
 
 .section-product {
-  padding-top: 5.8rem;
-  height: 1000px;
-  background-color: red;
+  padding: 5rem 0;
+  background-color: $bg-color-dark;
 
   &__container {
     position: relative;

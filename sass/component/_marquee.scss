@@ -15,19 +15,18 @@
   &-1,
   &-2 {
     position: absolute;
-    min-width: 100%;
     display: flex;
     flex-direction: row;
   }
 
   &-1 {
     animation: marquee-keywords 10s linear infinite;
-    left: 0%;
+    left: 0;
   }
 
   &-2 {
     animation: marquee-keywords 10s linear infinite;
-    left: 110%;
+    left: 100%;
   }
 }
 

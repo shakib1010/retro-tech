@@ -1,11 +1,23 @@
 @use "../abstract/" as *;
 
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
 h1 {
   font-family: "Orbitron", sans-serif;
   font-size: 9.6rem;
   font-weight: bold;
-  line-height: .9;
+  line-height: 0.9;
   color: $text-color;
+
+  @include respond(phone) {
+    font-size: 6.6rem;
+    line-height: 1;
+  }
 }
 
 h2 {
