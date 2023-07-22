@@ -1,11 +1,4 @@
-@mixin clearfix {
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
+// ABSOLUTE CENTER
 @mixin absCenter {
   position: absolute;
   top: 50%;
@@ -15,38 +8,104 @@
 
 // MEDIA QUERY MANAGER
 /*
-0 - 600px:      Phone
-600 - 900px:    Tablet portrait
-900 - 1200px:   Tablet landscape
-[1200 - 1800] is where our normal styles apply
+0 - 300px: bp-3
+300 - 400px: bp-4
+400 - 500px : bp-5
+500 - 600px: bp-6
+600 - 700px: bp-7
+700 - 800px: bp-8
+800 - 900px: bp-9
+900 - 1000px: bp-10
+1000 - 1100: bp-11
+1100 - 1200px: bp-12
+1200 - 1300px: bp-23
+1300 - 1400: bp-14
+1200 - 1500px : bp-15
+[1500 - 1800] is where our normal styles apply
 1800px + :      Big desktop
 
-$breakpoint argument choices:
-- phone
-- tab-port
-- tab-land
-- big-desktop
 
-ORDER: Base + typography > general layout + grid > page layout > components
-
+ORDER: Base + Typography > General layout + Grid > Page layout > Components
 1em = 16px
+
 */
 
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
+  @if $breakpoint == bp-3 {
+    @media only screen and (max-width: 18.75em) {
+      @content;
+    } //300px 
+  }
+
+  @if $breakpoint == bp-4 {
+    @media only screen and (max-width: 25em) {
+      @content;
+    } //400px 
+  }
+
+  @if $breakpoint ==  bp-5 {
+    @media only screen and (max-width: 31.25em) {
+      @content;
+    } //500px
+  }
+
+  @if $breakpoint == bp-6 {
     @media only screen and (max-width: 37.5em) {
       @content;
     } //600px
   }
-  @if $breakpoint == tab-port {
+
+  @if $breakpoint == bp-7 {
+    @media only screen and (max-width: 43.75em) {
+      @content;
+    } //700px
+  }
+
+  @if $breakpoint == bp-8 {
+    @media only screen and (max-width: 50em) {
+      @content;
+    } //800px
+  }
+
+  @if $breakpoint == bp-9 {
     @media only screen and (max-width: 56.25em) {
       @content;
     } //900px
   }
-  @if $breakpoint == tab-land {
+  @if $breakpoint == bp-10 {
+    @media only screen and (max-width: 62.5em) {
+      @content;
+    } //1000px
+  }
+
+  @if $breakpoint == bp-11 {
+    @media only screen and (max-width: 68.75em) {
+      @content;
+    } //1100px
+  }
+
+  @if $breakpoint == bp-12 {
     @media only screen and (max-width: 75em) {
       @content;
     } //1200px
+  }
+
+  @if $breakpoint == bp-13 {
+    @media only screen and (max-width: 81.25em) {
+      @content;
+    } //1300px
+  }
+
+  @if $breakpoint == bp-14 {
+    @media only screen and (max-width: 87.5em) {
+      @content;
+    } //1400px
+  }
+
+  @if $breakpoint == bp-15 {
+    @media only screen and (max-width: 93.75em) {
+      @content;
+    } //1500px
   }
 
   @if $breakpoint == big-desktop {
@@ -55,3 +114,4 @@ ORDER: Base + typography > general layout + grid > page layout > components
     } //1800
   }
 }
+

@@ -24,7 +24,7 @@
     <script src="gsap.js" defer></script>
     <title>Retro Tech</title>
   </head>
-  <body>
+  <body data-scroll-container>
     <!-- NAVIGATION -->
     <div class="navigation">
       <div class="container navigation__container">
@@ -45,6 +45,15 @@
         <div class="navigation__background">&nbsp;</div>
 
         <nav class="navigation__nav">
+          <div class="navigation__nav-logo-box">
+            <img
+              class="navigation__nav-logo"
+              src="images/retro-tech.png"
+              alt=""
+            />
+            <div class="navigation__nav-logo-line">&nbsp;</div>
+          </div>
+
           <ul class="navigation__list">
             <li class="navigation__item">
               <a href="#" class="navigation__link">Home</a>
@@ -66,8 +75,8 @@
       </div>
     </div>
 
-    <!-- HEADER SECTION -->
-    <header class="hero u-mb-small-5">
+    <!-- SECTION HEADER -->
+    <header class="hero mar-bot-largest">
       <div class="container hero__container">
         <div class="hero__bg">
           <img
@@ -76,17 +85,17 @@
             class="hero__bg-item hero__bg-item--1"
           />
           <img
-            src="images/img/mac.png"
+            src="images/img/console.png"
             alt=""
             class="hero__bg-item hero__bg-item--2"
           />
           <img
-            src="images/img/mac.png"
+            src="images/img/EENDUR.png"
             alt=""
             class="hero__bg-item hero__bg-item--3"
           />
           <img
-            src="images/img/mac.png"
+            src="images/img/gameboy.png"
             alt=""
             class="hero__bg-item hero__bg-item--4"
           />
@@ -95,6 +104,16 @@
             alt=""
             class="hero__bg-item hero__bg-item--5"
           />
+          <img
+            src="images/img/old-music.png"
+            alt=""
+            class="hero__bg-item hero__bg-item--6"
+          />
+          <img
+            src="images/img/gameboy.png"
+            alt=""
+            class="hero__bg-item hero__bg-item--7"
+          />
         </div>
 
         <div class="hero__text-box">
@@ -102,39 +121,41 @@
             Reminiscing <br />
             The <span>Retro</span> tech
           </h1>
-          <a href="#" class="btn btn-primary">Inspect</a>
+          <a href="#" class="btn btn-primary">
+            <span class="btn-primary__text btn-primary__text--main">Inspect</span>
+            <span class="btn-primary__text btn-primary__text--sub">Inspect</span>
+          </a>
         </div>
       </div>
     </header>
 
     <!-- SECTION HEADLINE -->
-    <section class="section-headline u-mb-huge-3">
-      <div class="marquee">
-        <span class="marquee-1">
-          <span class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            totam error amet maiores fuga voluptatem iste voluptatibus beatae
-            explicabo doloremque?
-          </span>
-        </span>
-        <span class="marquee-2">
-          <span class="text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde,
-            molestias. Nobis necessitatibus fugiat architecto, fugit minima
-            velit mollitia facilis eveniet!
-          </span>
-        </span>
+    <div class="marque">
+      <div class="box">
+        <div class="test">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+          totam error amet maiores fuga voluptatem iste voluptatibus beatae
+          explicabo doloremque?
+        </div>
       </div>
-    </section>
+      <div class="box">
+        <div class="test">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+          totam error amet maiores fuga voluptatem iste voluptatibus beatae
+          explicabo doloremque?
+        </div>
+      </div>
+    </div>
 
-    <!-- SECTION -->
-    <!-- <div class="wrapper u-mb-big-5">
+    <!-- HORIZONTAL SCROLLING -->
+    <div class="wrapper mar-bot-largest-3">
       <div class="scroll-container scrollx">
         <section class="sec sec1 pin">
           <div class="sec__content">
             <div class="sec__img-box">
-              <img class="sec__img" src="images/img/car.jpg" alt="" />
+              <img class="sec__img" src="images/phone.jpg" alt="" />
             </div>
+
             <div class="sec__content-box">
               <h1>The excited title goes here</h1>
               <p>
@@ -147,10 +168,11 @@
             </div>
           </div>
         </section>
+
         <section class="sec sec2 pin">
           <div class="sec__content">
             <div class="sec__img-box">
-              <img class="sec__img" src="images/img/car.jpg" alt="" />
+              <img class="sec__img" src="images/caset.jpg" alt="" />
             </div>
             <div class="sec__content-box">
               <h1>The excited title goes here</h1>
@@ -182,12 +204,12 @@
           </div>
         </section>
       </div>
-    </div> -->
+    </div>
 
     <!-- PRODUCT SECTION -->
-    <section class="section-product">
+    <section class="section-product mar-bot-largest-2">
       <div class="container section-product__container">
-        <div class="product__title u-center-text u-mb-medium-5">
+        <div class="product__title">
           <h2>The products</h2>
         </div>
 
@@ -234,14 +256,16 @@
     </section>
 
     <!-- REVIEW SECTION -->
-    <section class="review container u-mt-huge u-mb-huge-1">
-      <h2>WE MAKE PEOPLE GENUINELY HAPPY</h2>
+    <section class="review container">
+      <h2 class="review-title">WE MAKE PEOPLE GENUINELY HAPPY</h2>
       <div class="review__card">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="review__card-box">
-                <div class="review__card-box-img"></div>
+                <div class="review__card-box-img">
+                  <img src="images/person 1.jpg" alt="" />
+                </div>
                 <div class="review__card-box-info">
                   <h3>I HAD THE BEST WEEK EVER WITH MY FAMILY</h3>
                   <p>
@@ -253,9 +277,12 @@
                 </div>
               </div>
             </div>
+
             <div class="swiper-slide">
               <div class="review__card-box">
-                <div class="review__card-box-img">X</div>
+                <div class="review__card-box-img">
+                  <img src="images/person 2.jpg" alt="" />
+                </div>
                 <div class="review__card-box-info">
                   <h3>I HAD THE BEST WEEK EVER WITH MY FAMILY</h3>
                   <p>
@@ -267,9 +294,12 @@
                 </div>
               </div>
             </div>
+
             <div class="swiper-slide">
               <div class="review__card-box">
-                <div class="review__card-box-img">X</div>
+                <div class="review__card-box-img">
+                  <img src="images/person 3.jpg" alt="" />
+                </div>
                 <div class="review__card-box-info">
                   <h3>I HAD THE BEST WEEK EVER WITH MY FAMILY</h3>
                   <p>
@@ -288,23 +318,25 @@
         <div
           class="review__card-iconbox review__card-iconbox--left swiper-button-prev"
         >
-          <object data="icons/arrow-left.svg" class="svg"></object>
+          <img class="svg" src="icons/arrow-left.svg" alt="" />
         </div>
 
         <div
           class="review__card-iconbox review__card-iconbox--right swiper-button-next"
         >
-          <object data="icons/arrow-right.svg"></object>
+          <img src="icons/arrow-right.svg" alt="" class="svg" />
         </div>
       </div>
     </section>
 
     <!-- Delivery section -->
-
     <section class="delivery container">
       <div class="delivery--1">
         <h2>Free delivery we deliver goods to your doorstep</h2>
-        <button class="btn">Get App</button>
+        <button class="btn btn__secondary">
+          <span class="btn__secondary-text btn__secondary-text--main">Get App</span>
+          <span class="btn__secondary-text btn__secondary-text--sub">Get App</span>
+        </button>
         <img src="images/img/handfone.png" alt="" class="delivery--1-img" />
       </div>
       <div class="delivery--2">
