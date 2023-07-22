@@ -1,47 +1,30 @@
-@use "../abstract/" as *;
+@use '../abstract/' as *;
 
-.marquee {
-  width: 100%;
+// Marque
+.marque {
   height: 8rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  width: 100%;
   position: relative;
+  display: flex;
+  align-items: center;
   overflow: hidden;
   border-top: 2px solid $text-color;
   border-bottom: 2px solid $text-color;
-
-  &-1,
-  &-2 {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-  }
-
-  &-1 {
-    animation: marquee-keywords 10s linear infinite;
-    left: 0;
-  }
-
-  &-2 {
-    animation: marquee-keywords 10s linear infinite;
-    left: 100%;
-  }
 }
 
-.text {
-  padding: 0 5rem;
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  flex-shrink: 0;
+  color: black;
+  cursor: pointer;
   font-size: 3rem;
-  white-space: nowrap;
 }
 
-@keyframes marquee-keywords {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  100% {
-    transform: translate(-100%, 0);
-  }
+.test {
+  // padding: 60px 0;
 }

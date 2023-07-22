@@ -7,7 +7,6 @@
   left: 0;
   top: 0;
   backdrop-filter: blur(10px);
-
   z-index: 2000;
 
   // &__container {
@@ -83,8 +82,9 @@
   &__nav {
     position: fixed;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     top: 0;
@@ -92,6 +92,22 @@
     left: -100%;
     z-index: 1500;
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+
+  &__nav-logo-box {
+    max-width: 100rem;
+    padding-top: 40rem;
+  }
+
+  &__nav-logo {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  &__nav-logo-line {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
   }
 
   &__list {
@@ -110,7 +126,7 @@
       text-decoration: none;
       color: $bg-color;
       background: linear-gradient(120deg, transparent 50%, $color-white 50%);
-      padding: 1rem 2rem;
+      padding: 0.8rem 1.2rem;
       display: block;
       background-size: 220%;
       transition: all 0.3s;
@@ -127,7 +143,7 @@
 
   // Functionality
   &__checkbox:checked ~ &__background {
-    height: 100vh;
+    height: calc(100vh - 8rem);
   }
 
   &__checkbox:checked ~ &__nav {
