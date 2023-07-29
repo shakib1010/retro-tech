@@ -2,11 +2,67 @@
 
 .hero {
   position: relative;
-  height: 100vh;
+  height: 80vh;
   padding-top: 6rem;
 
   @include respond(tab-port) {
     height: 70vh;
+  }
+
+  &__pointer {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    //4d455
+    // box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &-text {
+      animation: rotateText 5s linear infinite;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border: none;
+      color: $text-color;
+
+      @keyframes rotateText {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      &-box {
+        position: relative;
+        // background-color: brown;
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+      }
+
+      & span {
+        position: absolute;
+        left: 50%;
+        font-size: 1.5rem;
+        transform-origin: 0 9rem;
+      }
+    }
+
+    &-img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.3s ease-in-out;
+      height: 50%;
+      // width: 50%;
+      // background-color: aquamarine;
+    }
   }
 
   &__container {
@@ -36,36 +92,36 @@
     }
 
     &--1 {
-      top: 50%;
+      top: 65%;
       left: 12rem;
-      scale: 4;
+      scale: 3;
       rotate: 20deg;
     }
 
     &--2 {
       top: 25%;
       right: 20rem;
-      scale: 2.5;
-      rotate: -10deg;
+      scale: 4.5;
+      rotate: 45deg;
     }
 
     &--3 {
-      top: 15%;
-      left: 45%;
-      scale: 4;
-      rotate: -10deg;
+      top: 80%;
+      left: 30%;
+      scale: 2.4;
+      rotate: 20deg;
     }
 
     &--4 {
-      top: 80%;
-      left: 45%;
-      scale: 2.4;
+      top: 10%;
+      left: 55%;
+      scale: 3.5;
       rotate: -10deg;
     }
 
     &--5 {
       top: 80%;
-      right: 20rem;
+      right: 50rem;
       scale: 4;
       rotate: 20deg;
     }
@@ -76,21 +132,19 @@
       scale: 3;
       rotate: 60deg;
     }
-
-    &--7 {
-      top: 50%;
-      left: 50%;
-      scale: 1;
-      rotate: 30deg;
-    }
   }
 
   &__text-box {
     text-align: center;
   }
 
+  &__text {
+    overflow: hidden;
+  }
+
   &__title {
     margin-bottom: 4.6rem;
+    line-height: 1;
 
     span {
       text-transform: uppercase;
@@ -98,4 +152,9 @@
       font-family: "Orbitron", sans-serif;
     }
   }
+}
+
+.hero__pointer:hover {
+  transform: scale(0.9);
+  animation: none;
 }

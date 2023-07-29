@@ -22,6 +22,7 @@
     />
     <link rel="stylesheet" href="dist/css/index.css" />
     <script src="gsap.js" defer></script>
+    <script src="circle.js" defer></script>
     <title>Retro Tech</title>
   </head>
   <body data-scroll-container>
@@ -76,7 +77,7 @@
     </div>
 
     <!-- SECTION HEADER -->
-    <header class="hero mar-bot-largest">
+    <header class="hero">
       <div class="container hero__container">
         <div class="hero__bg">
           <img
@@ -89,6 +90,7 @@
             alt=""
             class="hero__bg-item hero__bg-item--2"
           />
+
           <img
             src="images/img/EENDUR.png"
             alt=""
@@ -117,39 +119,69 @@
         </div>
 
         <div class="hero__text-box">
-          <h1 class="hero__title">
-            Reminiscing <br />
-            The <span>Retro</span> tech
-          </h1>
+          <div class="hero__text">
+            <h1 class="hero__title">
+              Reminiscing <br />
+              The <span>Retro</span> tech
+            </h1>
+          </div>
+
           <a href="#" class="btn btn-primary">
-            <span class="btn-primary__text btn-primary__text--main">Inspect</span>
-            <span class="btn-primary__text btn-primary__text--sub">Inspect</span>
+            <span class="btn-primary__text btn-primary__text--main"
+              >Inspect</span
+            >
+            <span class="btn-primary__text btn-primary__text--sub"
+              >Inspect</span
+            >
           </a>
         </div>
+      </div>
+
+      <div class="hero__pointer">
+        <a href="#footer">
+          <div class="hero__pointer-text-box">
+            <p class="hero__pointer-text btn">
+              .Click to go down. Click to go down
+            </p>
+          </div>
+          <img src="./icons/down.svg" alt="" class="hero__pointer-img" />
+        </a>
       </div>
     </header>
 
     <!-- SECTION HEADLINE -->
     <div class="marque">
       <div class="box">
-        <div class="test">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-          totam error amet maiores fuga voluptatem iste voluptatibus beatae
-          explicabo doloremque?
+        <div class="test msg">Welcome to Retro Tech! &nbsp;</div>
+      </div>
+      <div class="box">
+        <div class="test msg">
+          Let's get started with 80's aesthetics &nbsp;
         </div>
       </div>
       <div class="box">
-        <div class="test">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-          totam error amet maiores fuga voluptatem iste voluptatibus beatae
-          explicabo doloremque?
-        </div>
+        <div class="test msg">A brand new experience by reminiscing &nbsp;</div>
       </div>
     </div>
 
     <!-- HORIZONTAL SCROLLING -->
     <div class="wrapper mar-bot-largest-3">
       <div class="scroll-container scrollx">
+        <section class="sec sec2 pin">
+          <div class="sec__content">
+            <div class="sec__img-box">
+              <img class="sec__img" src="images/caset.jpg" alt="" />
+            </div>
+            <div class="sec__content-box">
+              <h1>Back to the 80s aesthetics</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                voluptas magni porro qui alias optio rerum ad quidem sed
+                praesentium?
+              </p>
+            </div>
+          </div>
+        </section>
         <section class="sec sec1 pin">
           <div class="sec__content">
             <div class="sec__img-box">
@@ -157,7 +189,7 @@
             </div>
 
             <div class="sec__content-box">
-              <h1>The excited title goes here</h1>
+              <h1>Get ready to experience the new models!</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Deserunt debitis eligendi consectetur dicta distinctio porro
@@ -169,36 +201,18 @@
           </div>
         </section>
 
-        <section class="sec sec2 pin">
-          <div class="sec__content">
-            <div class="sec__img-box">
-              <img class="sec__img" src="images/caset.jpg" alt="" />
-            </div>
-            <div class="sec__content-box">
-              <h1>The excited title goes here</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deserunt debitis eligendi consectetur dicta distinctio porro
-                esse, quibusdam fugit nemo impedit repellendus? Deserunt
-                reprehenderit consectetur facilis doloremque delectus, beatae
-                fugiat unde?
-              </p>
-            </div>
-          </div>
-        </section>
         <section class="sec sec3 pin">
           <div class="sec__content">
             <div class="sec__img-box">
               <img class="sec__img" src="images/img/car.jpg" alt="" />
             </div>
             <div class="sec__content-box">
-              <h1>The excited title goes here</h1>
+              <h1>The journey begins here</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deserunt debitis eligendi consectetur dicta distinctio porro
-                esse, quibusdam fugit nemo impedit repellendus? Deserunt
-                reprehenderit consectetur facilis doloremque delectus, beatae
-                fugiat unde?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
+                eligendi rerum voluptate modi, ipsam quas quibusdam rem fuga
+                voluptatem repellat culpa tenetur voluptas fugit iusto quaerat
+                veritatis accusamus iure accusantium?
               </p>
             </div>
           </div>
@@ -267,12 +281,11 @@
                   <img src="images/person 1.jpg" alt="" />
                 </div>
                 <div class="review__card-box-info">
-                  <h3>I HAD THE BEST WEEK EVER WITH MY FAMILY</h3>
+                  <h3>I CAN USE THE ITEMS WITH FULL POTENTIALS!</h3>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aperiam, ipsum sapiente aspernatur libero repellat quis
-                    consequatur ducimus quam nisi exercitationem omnis earum
-                    qui.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Blanditiis officia architecto libero totam eveniet
+                    possimus!s
                   </p>
                 </div>
               </div>
@@ -284,7 +297,7 @@
                   <img src="images/person 2.jpg" alt="" />
                 </div>
                 <div class="review__card-box-info">
-                  <h3>I HAD THE BEST WEEK EVER WITH MY FAMILY</h3>
+                  <h3>THEY SELL GOOD PRODUCTS AND IT'S DURABLE.</h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Aperiam, ipsum sapiente aspernatur libero repellat quis
@@ -301,12 +314,14 @@
                   <img src="images/person 3.jpg" alt="" />
                 </div>
                 <div class="review__card-box-info">
-                  <h3>I HAD THE BEST WEEK EVER WITH MY FAMILY</h3>
+                  <h3>
+                    I AM AMAZED JUST BY LOOKING AT THE FEATURES ALL TOGETHER.
+                  </h3>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aperiam, ipsum sapiente aspernatur libero repellat quis
-                    consequatur ducimus quam nisi exercitationem omnis earum
-                    qui.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    harum cum accusantium, ea perferendis architecto quidem sed
+                    dolorum qui unde, autem, in quia minima magni iusto quae
+                    repellendus blanditiis sapiente.
                   </p>
                 </div>
               </div>
@@ -334,8 +349,12 @@
       <div class="delivery--1">
         <h2>Free delivery we deliver goods to your doorstep</h2>
         <button class="btn btn__secondary">
-          <span class="btn__secondary-text btn__secondary-text--main">Get App</span>
-          <span class="btn__secondary-text btn__secondary-text--sub">Get App</span>
+          <span class="btn__secondary-text btn__secondary-text--main"
+            >Get App</span
+          >
+          <span class="btn__secondary-text btn__secondary-text--sub"
+            >Get App</span
+          >
         </button>
         <img src="images/img/handfone.png" alt="" class="delivery--1-img" />
       </div>
@@ -352,7 +371,7 @@
     </section>
 
     <!-- FOOTER SECTION -->
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="footer__box container">
         <div class="footer__faq">
           <h4 class="footer__faq-title">Faq</h4>
@@ -370,7 +389,7 @@
               type="email"
               name="f-email"
               id="f-email"
-              class="footer__form-input"
+              class="footer__form-input info"
               placeholder="Enter your email address"
             />
             <button class="footer__form-btn">&rarr;</button>
@@ -411,6 +430,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/Draggable.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
     <script src="app/app.js"></script>
   </body>
 </html>

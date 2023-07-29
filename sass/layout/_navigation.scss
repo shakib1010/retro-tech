@@ -82,7 +82,7 @@
   &__nav {
     position: fixed;
     width: 100%;
-    height: calc(100vh);
+    height: calc(90vh);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,7 +107,8 @@
   &__nav-logo-line {
     height: 2px;
     width: 100%;
-    background-color: #fff;
+    // background-color: #fff;
+    background-color: $bg-color;
   }
 
   &__list {
@@ -117,6 +118,9 @@
   &__item {
     margin: 2rem;
     text-align: center;
+    font-family: "Orbitron", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 400;
   }
 
   &__link {
@@ -125,7 +129,7 @@
     &:visited {
       text-decoration: none;
       color: $bg-color;
-      background: linear-gradient(120deg, transparent 50%, $color-white 50%);
+      background: linear-gradient(120deg, transparent 50%, $bg-color 50%);
       padding: 0.8rem 1.2rem;
       display: block;
       background-size: 220%;
@@ -135,6 +139,7 @@
 
     &:hover,
     &:active {
+      background-color: $bg-color;
       background-position: right;
       transform: translateX(1rem);
       color: $accent-color;

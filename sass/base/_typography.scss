@@ -13,7 +13,9 @@ h1 {
   font-weight: bold;
   line-height: 0.9;
   color: $text-color;
-
+  stroke-width: 2rem;
+  // -webkit-text-stroke-color: $text-color;
+  // -webkit-text-stroke-width: 2px;
   @include respond(phone) {
     font-size: 6.6rem;
     line-height: 1;
@@ -64,4 +66,11 @@ p {
   font-family: "Orbitron", sans-serif;
   font-size: 6.4rem;
   font-weight: 400;
+  color: $text-color;
 }
+
+// .btn-bold {
+//   font-family: "Orbitron", sans-serif;
+//   font-size: 3.2rem;
+//   font-weight: bold;
+// }

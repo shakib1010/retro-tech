@@ -8,7 +8,7 @@
     font-size: 3.2rem;
     padding: 1rem 2rem;
     background-color: none;
-    border: none;
+    border: 2px solid $text-color;
   }
 
   &-primary {
@@ -62,7 +62,7 @@
     cursor: pointer;
     color: $bg-color;
     font-weight: bold;
-    
+
     &-text {
       position: absolute;
       width: 100%;

@@ -1,4 +1,4 @@
-@use '../abstract/' as *;
+@use "../abstract/" as *;
 
 // Marque
 .marque {
@@ -9,6 +9,7 @@
   align-items: center;
   overflow: hidden;
   border-top: 2px solid $text-color;
+  padding: 7rem 0;
   border-bottom: 2px solid $text-color;
 }
 
@@ -20,11 +21,6 @@
   padding: 0;
   position: relative;
   flex-shrink: 0;
-  color: black;
   cursor: pointer;
   font-size: 3rem;
-}
-
-.test {
-  // padding: 60px 0;
 }
